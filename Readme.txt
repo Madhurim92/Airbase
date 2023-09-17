@@ -32,4 +32,4 @@ Steps to Run the Feature.java :
 3. Modify the chromedriverPath in the config.properties.
 4. Run Feature.java file. 
 
-[ScreenRecording of the Testcase](https://drive.google.com/file/d/1U1QGddb3MhCWAb9mjZb93nI10K4oUr2G/view?usp=sharing)
+ScreenRecording of the Testcase: https://drive.google.com/file/d/1U1QGddb3MhCWAb9mjZb93nI10K4oUr2G/view?usp=sharing
