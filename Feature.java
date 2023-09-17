@@ -39,7 +39,7 @@ class Feature {
         driver.manage().window().maximize();
 
         SearchItems search = new SearchItems();
-        addToCart cart = new addToCart();
+        AddToCart cart = new AddToCart();
         Filter filterObj = new Filter();
 
 
