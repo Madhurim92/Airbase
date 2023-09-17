@@ -40,7 +40,7 @@ class Feature {
 
         SearchItems search = new SearchItems();
         addToCart cart = new addToCart();
-        filter filterObj = new filter();
+        Filter filterObj = new Filter();
 
 
         for (String branditem : arrbrand) {
