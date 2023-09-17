@@ -19,16 +19,15 @@ public class filter {
         gobutton.click();
 
         // Sort the prices
-        
         WebElement sortBy = driver.findElement(By.xpath("//span[normalize-space()='Featured']"));
         sortBy.click();
         WebElement highToLow = driver.findElement(By.xpath("//a[@id='s-result-sort-select_2']"));
         highToLow.click();
-        checkPriceRange(driver);
+        checkPriceRange(driver, Integer.parseInt(minValue), Integer.parseInt(maxValue));
     }
 
 
-    public static void checkPriceRange(WebDriver driver) {
+    public static void checkPriceRange(WebDriver driver, Integer minValue, Integer maxValue) {
         // Check the price range of the elements
 
         List<WebElement> priceList = driver.findElements(By.xpath("//span[@class='a-price-whole']"));
@@ -37,15 +36,7 @@ public class filter {
             int prices =  Integer.parseInt(priceList.get(ii).getText().replaceAll(",",""));
             listOfPrices.add(prices);
         }
-        assert(!((Collections.max(listOfPrices) > 1000 && Collections.max(listOfPrices) < 5000) && (Collections.min(listOfPrices) > 1000 && (Collections.min(listOfPrices) < 5000)))) : "Prices displayed are not in the range";
- /*
-        if ((Collections.max(listOfPrices) > 1000 && Collections.max(listOfPrices) < 5000) && (Collections.min(listOfPrices) > 1000 && (Collections.min(listOfPrices) < 5000))) {
-            System.out.println("Prices displayed are within the range");
-        }
-        else {
-            System.out.println("Prices displayed are not within the  range");
-        }
-   */
+        assert(!((Collections.max(listOfPrices) > minValue && Collections.max(listOfPrices) < maxValue) && (Collections.min(listOfPrices) > minValue && (Collections.min(listOfPrices) < maxValue)))) : "Prices displayed are not in the range";
     }
 
 }
