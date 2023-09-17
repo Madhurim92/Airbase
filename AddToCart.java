@@ -5,13 +5,13 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.Set;
 
-public class addToCart {
+public class AddToCart {
     public static void addToCartandVerify(WebDriver driver) throws InterruptedException {
         // Open the 1st element
         WebElement item = driver.findElement(By.xpath("//span[@class='a-size-base-plus a-color-base a-text-normal']"));
         item.click();
 
-        // Window Handler for the next tab
+        // Window Handler for the next 
         Set<String> s = driver.getWindowHandles();
         ArrayList winlist = new ArrayList<>(s);
         driver.switchTo().window((String)winlist.get(1));
