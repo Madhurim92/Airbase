@@ -45,13 +45,17 @@ class Feature {
 
         for (String branditem : arrbrand) {
 
+            // Step 1: Open the website and Search for a particular item
             search.OpenWebAndSearch(driver, p.getProperty("itemToBeSearched"));
+
+            // Step 2: Filter based on the Brand specified. 
             search.selectBrand(driver,branditem);
 
+            // Step 3: Filter based on the min and max price range and verify the same.
             filterObj.priceRange(driver,p.getProperty("minValue"), p.getProperty("maxValue"));
 
-
-           cart.addToCartandVerify(driver);
+            // Step 4: Add the item to the cart and verify the same. 
+            cart.addToCartandVerify(driver);
         }
         driver.quit();
     }
