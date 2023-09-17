@@ -1,0 +1,49 @@
+List of TestCases to verify search:
+===================================
+
+1. Load amazon.com website
+2. Check if the page is loaded.
+3. Check weather the search tab is clickable or not. 
+4. Check if the search tab takes alpha-numeric characters.
+5. Check if there is any size contraint on the string that can be entered.
+6. Check What happend when invalid string or some special characters are entered in the search box. 
+7. Check if the recent search history is displayed when the search box is clicked but before entering any characters.
+8. Check if the suggestions given while entering the characters are valid. 
+9. Check if the search catergory wise dropdown is clickable or not.
+10. Check if the search catergory wise dropdown works as expected. 
+11. Check on clicking the search-in button after entering the item to be searched.
+12. Check if the results obtained after clicking the search-in button are valid. 
+
+List of TestCases to verify filter: (Assuming the item searched is smartwatche)  
+===============================================================================
+
+1. Check if the branch checkboxes are clickable. 
+2. Select a particular brand and verify if the displayed products are of the brand selected.
+3. Filter by Delivery Day and check if the delivery dates of the displayed products are in the range.
+4. Filter based on the customer Reviews and verify the same. 
+5. Give a min and max price range and verify if the listed productes are in the range. 
+6. Click of the Deals and Discounts and verify if the displayed products have some discounds or deals.
+7. Verify such similar features specific to the item searched. Ex: In case of smartwatches, filters can be based on compatible devices, shape of the watch, Material type of the band, Display type etc. 
+8. Click on the various options of float filterbox that appears when a particular item is searched and verify if the displayed products are as per the filter selected. 
+
+List of TestCases to test add to cart:
+======================================
+
+1. Check weather the add to cart button is clickable or not.
+2. Click on add to cart and check if the item was added to cart.
+3. Check if a "added to cart" message is displayed when an item is added to the cart.
+4. Verify if the same item was added to the cart.
+5. Check if the same item can be added again to the cart.
+6. Check if the quantity is increased when the same item is added again to the cart.
+7. Check if the subtotal calculated is correct or not.
+8. Check if the user can increase the quantity from the dropdown in the cart page.
+9. Check if the user can select "This will be a gift" checkbox.
+10. Check if the user can delete the items from the cart.
+11. Check if the user can move the items from cart to the wishlist by clicking "Save for Later"
+12. Check if the item is deleted from the cart when user clicks "Save for Later".
+13. Check if a popover of similar items list is shown when user clicks "See more like this" 
+14. Check that user gets a url of the product when he/she clicks on share option.
+15. Check if the user is able to share the product link on verious social media sites like facebook, pinterest etc. 
+16. Check if the Proceed to Buy is clickable or not on the cart page.
+
+
