@@ -19,8 +19,7 @@ public class filter {
         gobutton.click();
 
         // Sort the prices
-        //WebElement sortBy = driver.findElement(By.xpath("//span[@id='a-autoid-0-announce']"));
-        //WebElement sortBy = driver.findElement(By.xpath("//span[@class='a-dropdown-prompt']"));
+        
         WebElement sortBy = driver.findElement(By.xpath("//span[normalize-space()='Featured']"));
         sortBy.click();
         WebElement highToLow = driver.findElement(By.xpath("//a[@id='s-result-sort-select_2']"));
