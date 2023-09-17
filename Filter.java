@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class filter {
+public class Filter {
     public static void priceRange(WebDriver driver, String minValue, String maxValue) {
 
         // Give price range
